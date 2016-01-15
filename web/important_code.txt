@@ -1,0 +1,85 @@
+try (PrintWriter out = response.getWriter())
+            {
+                out.println("<!DOCTYPE html>");
+                out.println("<html lang='en'>");
+                out.println("<head>");
+                out.println("<meta charset='utf-8'>");
+                out.println("<meta http-equiv='X-UA-Compatible' content='IE=edge'>");
+                out.println("<meta name='viewport' content='width=device-width, initial-scale=1'>");
+                out.println("<title>Bootstrap 101 Template</title>");
+
+                out.println("<link href='css/bootstrap.min.css' rel='stylesheet'>");
+
+                       
+                out.println("</head>");
+                out.println("<body>");
+                out.println("<div class=\"alert alert-danger\" role=\"alert\">Something went wrong! Please contact the developer.</div>");
+
+                out.println("<script src='js/jquery.min.js'></script>");
+                out.println("<script src='js/bootstrap.min.js'></script>");
+                out.println("</body>");
+                out.println("</html>");
+            }
+
+
+
+/* for creating a table with autoincrement */
+CREATE TABLE "users"
+(    
+   "sr" INT not null primary key
+        GENERATED ALWAYS AS IDENTITY
+        (START WITH 1, INCREMENT BY 1),   
+   "FNAME" VARCHAR(20) not null,     
+   "LNAME" VARCHAR(20) not null,
+   "EMAIL_ADD" VARCHAR(50) not null unique,
+   "PASS_KEY" VARCHAR(30) not null,
+   "GENDER" VARCHAR(10),  
+   "CONTACT" VARCHAR(10) not null,
+   "BIRTH" VARCHAR(100)    
+);
+
+
+CREATE TABLE "rushabh"
+(    
+   "sr" INT not null primary key
+        GENERATED ALWAYS AS IDENTITY
+        (START WITH 1, INCREMENT BY 1),   
+   "STATUS" VARCHAR(20) not null,
+   "EMAIL_ADD" VARCHAR(30) not null,
+   "SUBJECT" VARCHAR(60) not null,
+   "MESSAGE" VARCHAR(1000) not null,
+   "VIEWED" VARCHAR(5) not null,  
+   "TIMEDAY" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+
+/******************************************/
+
+/* For inserting data into table */
+insert into ROOT."users"(FNAME,LNAME,EMAIL_ADD,PASS_KEY,GENDER,CONTACT,BIRTH)
+values('Rushabh','Wadkar','rushabh6792@mymail.com','rootuser','Male','9004196353','13/SEPTEMBER/1995');
+
+
+insert into ROOT."rushabh"(STATUS,EMAIL_ADD,MESSAGE,VIEWED)
+values('RECEIVED', 'vswadkar6792', 'sdgfjsgdfgsdjfhgsjdfghdsfvcbvxndfsdfhsdf' , 'NO');
+
+/************************************/
+
+
+/* For selecting rows */
+SELECT * FROM ROOT."users" WHERE EMAIL_ADD='rushabh6792' AND PASS_KEY='rootuser';
+
+SELECT * FROM ROOT."rushabh6792" where "sr" = 2;
+
+/******************************/
+
+
+
+
+/* to update */
+
+UPDATE ROOT."vswadkar"
+SET VIEWED='NO'
+WHERE "sr"=4;
+
+/************************/

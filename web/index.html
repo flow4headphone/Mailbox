@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MailBox</title>
+    <link rel="icon" type="image/png" href="img/mail.png" />
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        @media (max-width:767px){
+            #advcontent{
+                margin-top: 0;
+            }
+        }
+        .adv:hover{
+            height: 185px;
+            width: 185px;
+        }
+    </style>
+  </head>
+  <body style="
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Open Sans;
+  ">
+      
+    <nav class="navbar navbar-default" style="border: none; background-color: white; border-radius: 0;">
+        <div class="container">
+          
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                  
+                <img alt="Brand" src="img/mail.png" height="30" width="30" style="margin-top: 10px;">
+                <a class="navbar-brand" href="index.html">My MailBox</a>
+              </div>
+
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="register.jsp">Registration</a></li>
+                  <li><a href="login.jsp">Login</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="terms.html">Terms And Conditions</a></li>
+                      <li><a href="aboutme.html">About Developer</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+      </div>
+    </nav>
+      
+      
+    <div id="carousel-example-generic" data-pause=null data-interval="3000" class="carousel slide" data-ride="carousel" style="margin-top:-15px;box-shadow: 0px 0px 20px #D3D4D5;">
+            
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+              <div class="item">
+                <img src="img/slideshow/slide3.png" style="width: 100%;">
+              </div>
+              <div class="item active">
+                <img src="img/slideshow/slide1.jpg" style="width: 100%;">
+              </div>
+              <div class="item">
+                <img src="img/slideshow/slide4.png" style="width: 100%;">
+              </div>
+            </div>
+    </div>
+    <br>
+    
+  <center><p style="font-size: 30px;">Welcome to <em><b>MyMailBox</b></em>.com</p></center>
+  <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+                <img src="img/slideshow/circle-experience.png" class="adv" />
+            </div>
+            <div class="col-md-3" id="advcontent" style="margin-top: 5%;">
+                <strong>Experience MyMail on any device</strong><br>
+                The best of MyMail is available wherever you are, from any device. More about MyMail for mobile.
+            </div>
+            <a href="aboutme.html" style="decoration: none; color: black;">
+                <div class="col-md-2 col-md-offset-0">
+                    <img src="img/slideshow/circle-help.png" class="adv" />
+                </div>
+                <div class="col-md-3" id="advcontent" style="margin-top: 5%;">
+                    <strong>Need help?</strong><br>
+                        Have a question about MyMail? Visit the developer's contact page.
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <hr>
+    <footer style="width: 100%; background-color: black; font-size: 12px; color: white; padding: 10px;">
+        <center>
+            While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy.
+	    <br/>
+            &copy; Copyright 2014-2016 by <a href="index.html">MyMailBox.Ltd.</a> &reg; All Rights Reserved.
+        </center>
+    </footer>
+    <!-- Script Section -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+   
+  </body>
+</html>
