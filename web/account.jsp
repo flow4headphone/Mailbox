@@ -312,8 +312,12 @@ String pass = "rootuser";
                 </div>
             
       </div>
-                    <hr>
-                    <br><br>
+    <div class="container">
+        <hr>
+        <center><p style="color: #0f0f0f; font-size: 12px;">Developed By <em><strong>Rushabh Wadkar</strong></em>. All rights reserved &reg; </p></center>
+        <hr>
+    </div>
+    <br><br>
     <!-- Script Section -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
