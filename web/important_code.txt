@@ -83,3 +83,25 @@ SET VIEWED='NO'
 WHERE "sr"=4;
 
 /************************/
+
+
+
+/**********************************/
+
+create table BOOKS
+(
+	"sr" INT not null primary key
+        GENERATED ALWAYS AS IDENTITY
+        (START WITH 1, INCREMENT BY 1), 
+	BOOKNAME VARCHAR(200) not null,
+	AUTHORNAME VARCHAR(200) not null,
+	PUBLISHERNAME VARCHAR(200) not null,
+	NOOFPAGES INTEGER not null,
+	NOOFLIKES INTEGER not null,
+	NOOFDISLIKES INTEGER not null,
+	PRICE INTEGER not null,
+	QUANTITY INTEGER not null,
+	TIMEDAY TIMESTAMP default CURRENT_TIMESTAMP not null
+)
+
+/*************************************/
